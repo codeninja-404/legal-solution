@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Solution</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/ff45585129.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-bg": "url('./images/banner.png')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="container mx-auto">
+      <!-- navbar -->
+      <nav class="my-10">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Services <i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Cases<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Blog<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Contact Us<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <a class="btn btn-ghost normal-case text-xl">
+              <img src="./images/logo2.png" alt=""
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li>
+                <a>Services <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Cases<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Blog<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Contact Us<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-[#b59226] text-white">Free Consultation</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section -->
+
+      <section class=" px-3 ">
+        <div class="hero h-[550px] bg-hero-bg rounded-xl">
+          <div class="hero-overlay bg-opacity-40 rounded-xl"></div>
+          <div class="text-center text-neutral-content">
+            <div class="max-w-xl">
+              <h1 class="mb-5 text-5xl font-bold leading-relaxed">
+                We Provide Effective Legal Solutions
+              </h1>
+              <p class="mb-5">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+             <div class="space-x-5   ">
+                <input id="email-address" name="email" type="email" autocomplete="email" required class="w-96 my-4 rounded-md border-0 bg-white px-3.5 py-2 text-white  sm:text-sm sm:leading-6" placeholder="Enter your email">
+
+                <button type="submit" class="bg-[#b59226] text-white flex-none rounded-md  px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Get Started</button>
+             </div>
+        
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
 </html>
