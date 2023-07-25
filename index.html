@@ -30,7 +30,7 @@
     <!-- header section -->
     <header class="container mx-auto">
       <!-- navbar -->
-      <nav class="my-10">
+      <nav class="my-10 px-3">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -70,9 +70,7 @@
               </ul>
             </div>
 
-            <a class="btn btn-ghost normal-case text-xl">
-              <img src="./images/logo2.png" alt=""
-            /></a>
+            <a class=" "> <img src="./images/logo2.png" alt="" /></a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -91,15 +89,21 @@
               </li>
             </ul>
           </div>
+
           <div class="navbar-end">
-            <a class="btn bg-[#b59226] text-white">Free Consultation</a>
+            <button
+              type="submit"
+              class="bg-[#b59226] text-white flex-none rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-400"
+            >
+              Free Consultation
+            </button>
           </div>
         </div>
       </nav>
 
       <!-- banner section -->
 
-      <section class=" px-3 ">
+      <section class="mb-10 px-3">
         <div class="hero h-[550px] bg-hero-bg rounded-xl">
           <div class="hero-overlay bg-opacity-40 rounded-xl"></div>
           <div class="text-center text-neutral-content">
@@ -112,17 +116,48 @@
                 but the majority have suffered alteration in some form, by
                 injected humour.
               </p>
-             <div class="space-x-5   ">
-                <input id="email-address" name="email" type="email" autocomplete="email" required class="w-96 my-4 rounded-md border-0 bg-white px-3.5 py-2 text-white  sm:text-sm sm:leading-6" placeholder="Enter your email">
+              <div class="space-x-5">
+                <input
+                  id="email-address"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="w-96 my-4 rounded-md border-0 bg-white px-3.5 py-2 text-white sm:text-sm sm:leading-6"
+                  placeholder="Enter your email"
+                />
 
-                <button type="submit" class="bg-[#b59226] text-white flex-none rounded-md  px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Get Started</button>
-             </div>
-        
-              
+                <button
+                  type="submit"
+                  class="bg-[#b59226] text-white flex-none rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-400"
+                >
+                  Get Started
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </header>
+
+    <!-- main section -->
+    <main class="container mx-auto">
+      <!-- clients review section -->
+      <section class="mb-10 px-3">
+        <div class="text-center max-w-xl mx-auto space-y-6">
+          <h3 class="text-4xl font-bold">What Our Client Say</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        
+        <div>
+            
+        </div>
+        
+      </section>
+    </main>
   </body>
 </html>
